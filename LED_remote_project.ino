@@ -22,8 +22,7 @@ void setup(){
 void loop(){
   while(IR.decode(&results) == 0){
   }
-  //Serial.print(results.value, HEX);
-  //Serial.print("\n");
+ 
   IR.resume();
   if(results.value==0xFF6897){
     button=1;
